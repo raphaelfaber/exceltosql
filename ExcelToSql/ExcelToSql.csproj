@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
@@ -9,6 +9,13 @@
 
   <ItemGroup>
     <PackageReference Include="ClosedXML" Version="0.105.0" />
+  </ItemGroup>
+
+  <!-- Keep sample files in the repo but do not compile them into the library -->
+  <ItemGroup>
+    <Compile Remove="samples/SampleUsage.cs" />
+    <None Include="samples/SampleUsage.cs" />
+    <None Include="samples/sample.xlsx" />
   </ItemGroup>
 
 </Project>

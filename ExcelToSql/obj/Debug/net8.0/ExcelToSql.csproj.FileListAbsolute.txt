@@ -1,6 +1,4 @@
-/home/raphaelfaber/Documentos/Respositories/exceltosql/ExcelToSql/bin/Debug/net8.0/ExcelToSql
 /home/raphaelfaber/Documentos/Respositories/exceltosql/ExcelToSql/bin/Debug/net8.0/ExcelToSql.deps.json
-/home/raphaelfaber/Documentos/Respositories/exceltosql/ExcelToSql/bin/Debug/net8.0/ExcelToSql.runtimeconfig.json
 /home/raphaelfaber/Documentos/Respositories/exceltosql/ExcelToSql/bin/Debug/net8.0/ExcelToSql.dll
 /home/raphaelfaber/Documentos/Respositories/exceltosql/ExcelToSql/bin/Debug/net8.0/ExcelToSql.pdb
 /home/raphaelfaber/Documentos/Respositories/exceltosql/ExcelToSql/obj/Debug/net8.0/ExcelToSql.GeneratedMSBuildEditorConfig.editorconfig
@@ -10,16 +8,6 @@
 /home/raphaelfaber/Documentos/Respositories/exceltosql/ExcelToSql/obj/Debug/net8.0/ExcelToSql.dll
 /home/raphaelfaber/Documentos/Respositories/exceltosql/ExcelToSql/obj/Debug/net8.0/refint/ExcelToSql.dll
 /home/raphaelfaber/Documentos/Respositories/exceltosql/ExcelToSql/obj/Debug/net8.0/ExcelToSql.pdb
-/home/raphaelfaber/Documentos/Respositories/exceltosql/ExcelToSql/obj/Debug/net8.0/ExcelToSql.genruntimeconfig.cache
 /home/raphaelfaber/Documentos/Respositories/exceltosql/ExcelToSql/obj/Debug/net8.0/ref/ExcelToSql.dll
-/home/raphaelfaber/Documentos/Respositories/exceltosql/ExcelToSql/bin/Debug/net8.0/ClosedXML.dll
-/home/raphaelfaber/Documentos/Respositories/exceltosql/ExcelToSql/bin/Debug/net8.0/ClosedXML.Parser.dll
-/home/raphaelfaber/Documentos/Respositories/exceltosql/ExcelToSql/bin/Debug/net8.0/DocumentFormat.OpenXml.dll
-/home/raphaelfaber/Documentos/Respositories/exceltosql/ExcelToSql/bin/Debug/net8.0/DocumentFormat.OpenXml.Framework.dll
-/home/raphaelfaber/Documentos/Respositories/exceltosql/ExcelToSql/bin/Debug/net8.0/ExcelNumberFormat.dll
-/home/raphaelfaber/Documentos/Respositories/exceltosql/ExcelToSql/bin/Debug/net8.0/RBush.dll
-/home/raphaelfaber/Documentos/Respositories/exceltosql/ExcelToSql/bin/Debug/net8.0/SixLabors.Fonts.dll
-/home/raphaelfaber/Documentos/Respositories/exceltosql/ExcelToSql/bin/Debug/net8.0/System.IO.Packaging.dll
 /home/raphaelfaber/Documentos/Respositories/exceltosql/ExcelToSql/obj/Debug/net8.0/ExcelToSql.csproj.AssemblyReference.cache
-/home/raphaelfaber/Documentos/Respositories/exceltosql/ExcelToSql/obj/Debug/net8.0/ExcelToSql.csproj.CopyComplete
 /home/raphaelfaber/Documentos/Respositories/exceltosql/ExcelToSql/obj/Debug/net8.0/ExcelToSql.sourcelink.json
