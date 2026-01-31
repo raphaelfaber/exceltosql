@@ -2,6 +2,9 @@ namespace ExcelToSql.Models;
 
 public class Column
 {
-    public string Type { get; set; }
-    public string Value { get; set; }
+    // Type may be unknown for some cells -> nullable
+    public string? Type { get; set; }
+
+    // Value may be missing (empty cell) -> nullable
+    public string? Value { get; set; }
 }

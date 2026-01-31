@@ -2,7 +2,9 @@ namespace ExcelToSql.Models;
 
 public class Table
 {
-    public string Name { get; set; }
+    // Name can be empty initially; default to empty string to satisfy the
+    // nullable-analysis and avoid surprise nulls for consumers.
+    public string Name { get; set; } = string.Empty;
 
     // Header row (separate from data rows)
     public Row? Header { get; set; }

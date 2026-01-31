@@ -115,6 +115,6 @@ public class SqlServerScriptCreator : SqlScriptCreator
     }
 
     private static string EscapeSqlString(string s) => s.Replace("'", "''");
-    private static string EscapeSqlIdentifier(string id) => id.Replace("]", "]]");
-    private static string EscapeSqlIdentifierForBracket(string id) => $"[{EscapeSqlIdentifier(id)}]";
+    private static string EscapeSqlIdentifier(string? id) => (id ?? string.Empty).Replace("]", "]]");
+    private static string EscapeSqlIdentifierForBracket(string? id) => $"[{EscapeSqlIdentifier(id)}]";
 }
