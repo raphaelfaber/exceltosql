@@ -18,15 +18,12 @@ public class CsvExtractorTests : IDisposable
     [Fact]
     public void ExtractTable_WithSimpleCsvFile_ShouldReturnTable()
     {
-        // Arrange
         var csvContent = "Name,Age,Salary\nJohn,30,50000\nJane,28,55000";
         File.WriteAllText(_testCsvPath, csvContent);
         var extractor = new CsvExtractor(_testCsvPath);
 
-        // Act
         var table = extractor.ExtractTable();
 
-        // Assert
         Assert.NotNull(table);
         Assert.Equal("test", table.Name);
         Assert.NotEmpty(table.Rows);

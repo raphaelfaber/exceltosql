@@ -56,7 +56,6 @@ public class SqlServerScriptCreator : SqlScriptCreator
 
         return t switch
         {
-            // numeric
             "int" => "INT",
             "bigint" or "long" => "BIGINT",
             "smallint" => "SMALLINT",
@@ -64,24 +63,20 @@ public class SqlServerScriptCreator : SqlScriptCreator
             "decimal" or "numeric" => "DECIMAL(18,2)",
             "float" or "double" => "FLOAT",
 
-            // strings
             "varchar" => "VARCHAR(255)",
             "nvarchar" => "NVARCHAR(255)",
             "nvarchar(max)" => "NVARCHAR(MAX)",
             "text" => "TEXT",
             "char" => "CHAR(1)",
 
-            // date/time
             "datetime" => "DATETIME",
             "date" => "DATE",
             "time" => "TIME",
 
-            // boolean
             "bit" or "bool" or "boolean" => "BIT",
 
-            // fallback
             _ => "NVARCHAR(MAX)"
-        };
+        }; 
     }
 
     private static string FormatValueForSql(Column col)

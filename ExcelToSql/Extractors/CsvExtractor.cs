@@ -41,7 +41,6 @@ public class CsvExtractor : TableExtractor
 
     public override SqlType ConvertToSqlType(string dataType)
     {
-        // CSV files are typically read as strings, so we default to VarChar
         return dataType?.ToLower() switch
         {
             DataTypeInferencer.TypeString => SqlType.VarChar,
@@ -52,5 +51,5 @@ public class CsvExtractor : TableExtractor
             DataTypeInferencer.TypeBool => SqlType.Bit,
             _ => SqlType.VarChar
         };
-    }
+    } 
 }
