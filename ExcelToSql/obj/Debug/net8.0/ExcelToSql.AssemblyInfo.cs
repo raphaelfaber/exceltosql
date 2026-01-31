@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ExcelToSql")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+480811dc9b7603f01412e263ef4e77107244d02f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8e56e1928c2334cf783f991d874757dd72e539fb")]
 [assembly: System.Reflection.AssemblyProductAttribute("ExcelToSql")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ExcelToSql")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
