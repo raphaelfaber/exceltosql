@@ -44,8 +44,10 @@ public class CsvExtractorTests : IDisposable
         var table = extractor.ExtractTable();
 
         // Assert
-        Assert.True(table.Rows[0].IsHeader);
-        Assert.False(table.Rows[1].IsHeader);
+        Assert.NotNull(table.Header);
+        Assert.Equal("Name", table.Header.Columns[0].Value);
+        Assert.Single(table.Rows);
+        Assert.Equal("John", table.Rows[0].Columns[0].Value);
     }
 
     [Fact]

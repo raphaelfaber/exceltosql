@@ -11,19 +11,15 @@ public class SqlServerScriptCreatorTests
         var table = new Table
         {
             Name = "people",
-            Rows =
+            Header = new Row
             {
-                new Row
+                Columns =
                 {
-                    IsHeader = true,
-                    Columns =
-                    {
-                        new Column { Value = "Name", Type = "VarChar" },
-                        new Column { Value = "Age", Type = "Int" },
-                        new Column { Value = "Active", Type = "Bit" }
-                    }
+                    new Column { Value = "Name", Type = "VarChar" },
+                    new Column { Value = "Age", Type = "Int" },
+                    new Column { Value = "Active", Type = "Bit" }
                 }
-            }
+            },
         };
 
         var creator = new SqlServerScriptCreator();
@@ -41,21 +37,19 @@ public class SqlServerScriptCreatorTests
         var table = new Table
         {
             Name = "people",
+            Header = new Row
+            {
+                Columns =
+                {
+                    new Column { Value = "Name", Type = "VarChar" },
+                    new Column { Value = "Age", Type = "Int" },
+                    new Column { Value = "Active", Type = "Bit" }
+                }
+            },
             Rows =
             {
                 new Row
                 {
-                    IsHeader = true,
-                    Columns =
-                    {
-                        new Column { Value = "Name", Type = "VarChar" },
-                        new Column { Value = "Age", Type = "Int" },
-                        new Column { Value = "Active", Type = "Bit" }
-                    }
-                },
-                new Row
-                {
-                    IsHeader = false,
                     Columns =
                     {
                         new Column { Value = "O'Malley", Type = "VarChar" },
@@ -65,7 +59,6 @@ public class SqlServerScriptCreatorTests
                 },
                 new Row
                 {
-                    IsHeader = false,
                     Columns =
                     {
                         new Column { Value = null, Type = "VarChar" },
@@ -92,7 +85,7 @@ public class SqlServerScriptCreatorTests
         var table = new Table
         {
             Name = "t",
-            Rows = { new Row { IsHeader = true, Columns = { new Column { Value = "C", Type = "VarChar" } } } }
+            Header = new Row { Columns = { new Column { Value = "C", Type = "VarChar" } } }
         };
 
         var creator = new SqlServerScriptCreator();

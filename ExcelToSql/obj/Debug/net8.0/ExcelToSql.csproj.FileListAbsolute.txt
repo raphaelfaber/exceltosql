@@ -22,3 +22,4 @@
 /home/raphaelfaber/Documentos/Respositories/exceltosql/ExcelToSql/bin/Debug/net8.0/System.IO.Packaging.dll
 /home/raphaelfaber/Documentos/Respositories/exceltosql/ExcelToSql/obj/Debug/net8.0/ExcelToSql.csproj.AssemblyReference.cache
 /home/raphaelfaber/Documentos/Respositories/exceltosql/ExcelToSql/obj/Debug/net8.0/ExcelToSql.csproj.CopyComplete
+/home/raphaelfaber/Documentos/Respositories/exceltosql/ExcelToSql/obj/Debug/net8.0/ExcelToSql.sourcelink.json

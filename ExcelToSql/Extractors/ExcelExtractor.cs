@@ -20,22 +20,20 @@ public class ExcelExtractor : TableExtractor
         for (int i = 1; i <= worksheet.Rows().Count(); i++)
         {
             var row = worksheet.Row(i);
-            
+
             Row rowObj = new Row();
-            if(i==1)
-            {
-                rowObj.IsHeader = true;
-            }
-            
             for (int j = 1; j <= row.Cells().Count(); j++)
             {
-
                 Column column = new Column();
                 column.Type = row.Cell(j).DataType.ToString();
-                column.Value = row.Cell(j).Value.ToString();                
+                column.Value = row.Cell(j).Value.ToString();
                 rowObj.Columns.Add(column);
             }
-            table.Rows.Add(rowObj);
+
+            if (i == 1)
+                table.Header = rowObj;
+            else
+                table.Rows.Add(rowObj);
         }
 
         return table;

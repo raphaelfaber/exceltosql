@@ -19,13 +19,8 @@ public class CsvExtractor : TableExtractor
         for (int i = 0; i < lines.Length; i++)
         {
             var values = lines[i].Split(',');
-            
+
             Row rowObj = new Row();
-            if(i == 0)
-            {
-                rowObj.IsHeader = true;
-            }
-            
             for (int j = 0; j < values.Length; j++)
             {
                 Column column = new Column();
@@ -34,7 +29,11 @@ public class CsvExtractor : TableExtractor
                 column.Value = trimmedValue;
                 rowObj.Columns.Add(column);
             }
-            table.Rows.Add(rowObj);
+
+            if (i == 0)
+                table.Header = rowObj;
+            else
+                table.Rows.Add(rowObj);
         }
 
         return table;

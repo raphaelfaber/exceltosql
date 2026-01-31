@@ -15,18 +15,6 @@ public class RowTests
         Assert.Empty(row.Columns);
     }
 
-    [Fact]
-    public void IsHeader_ShouldSetAndGetValue()
-    {
-        // Arrange
-        var row = new Row();
-
-        // Act
-        row.IsHeader = true;
-
-        // Assert
-        Assert.True(row.IsHeader);
-    }
 
     [Fact]
     public void Columns_ShouldAddColumn()
@@ -65,13 +53,4 @@ public class RowTests
         Assert.Equal(3, row.Columns.Count);
     }
 
-    [Fact]
-    public void IsHeader_ShouldDefaultToFalse()
-    {
-        // Arrange & Act
-        var row = new Row();
-
-        // Assert
-        Assert.False(row.IsHeader);
-    }
 }

@@ -6,7 +6,7 @@ public class SqlServerScriptCreator : SqlScriptCreator
 {
     protected override string CreateTableScriptCore(Table table)
     {
-        var header = table.Rows.FirstOrDefault(r => r.IsHeader) ?? table.Rows.FirstOrDefault();
+        var header = table.Header ?? table.Rows.FirstOrDefault();
         var columns = header?.Columns ?? new List<Column>();
 
         var colDefs = new List<string>();
@@ -24,14 +24,14 @@ public class SqlServerScriptCreator : SqlScriptCreator
 
     protected override string InsertRowsScriptCore(Table table)
     {
-        var headerRow = table.Rows.FirstOrDefault(r => r.IsHeader) ?? table.Rows.FirstOrDefault();
+        var headerRow = table.Header ?? table.Rows.FirstOrDefault();
         if (headerRow == null) return string.Empty;
 
         var columnNames = headerRow.Columns.Select((c, i) => string.IsNullOrWhiteSpace(c.Value) ? $"C{i+1}" : c.Value).ToList();
         var columnList = string.Join(", ", columnNames.Select(EscapeSqlIdentifierForBracket));
 
         var valueRows = new List<string>();
-        foreach (var row in table.Rows.Where(r => !r.IsHeader))
+        foreach (var row in table.Rows)
         {
             var values = new List<string>();
             for (int i = 0; i < columnNames.Count; i++)
