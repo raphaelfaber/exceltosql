@@ -1,1 +1,3 @@
 /.vscode
+/ExcelToSql/bin/*
+/ExcelToSql/obj/*
